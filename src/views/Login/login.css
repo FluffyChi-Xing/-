@@ -1,0 +1,43 @@
+.background {
+    width: 100vw;
+    height: 47vw;
+    display: block;
+    position: relative;
+    background-image: url("../../assets/images/Laptop_Desk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.layout {
+    width: 350px;
+    height: 300px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 150px;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.12);
+}
+.top {
+    width: 100%;
+    height: 50px;
+    display: block;
+    position: relative;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.el-divider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bottom {
+    width: 100%;
+    height: 230px;
+    display: block;
+    position: relative;
+    padding: 20px;
+}

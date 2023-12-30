@@ -1,0 +1,172 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+}
+.background {
+    width: 100%;
+    height: 93%;
+    display: block;
+    position: relative;
+    background-color: #e3e3e3;
+}
+.top {
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+.top-left {
+    width: 25%;
+    height: 100%;
+    display: block;
+    position: relative;
+    margin-right: 10px;
+}
+.top-left-top {
+    width: 100%;
+    height: 48%;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    border-radius: 5px;
+    padding: 10px;
+}
+.top-right {
+    width: 73%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+.top-right-top {
+    width: 100%;
+    height: 24%;
+    display: flex;
+    position: relative;
+}
+.top-right-bottom {
+    width: 100%;
+    height: 72%;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    border-radius: 5px;
+    padding: 10px;
+}
+.bottom {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+.bottom-left {
+    width: 50%;
+    height: 100%;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    margin-right: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    border-radius: 5px;
+}
+.bottom-right {
+    width: 48%;
+    height: 100%;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    border-radius: 5px;
+}
+.user-info {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: relative;
+}
+.user-info-2 {
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+.user-info-2 p {
+    width: 100%;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+}
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../../assets/images/avatar.png");
+    background-size: cover;
+    border-radius: 40px;
+}
+.information {
+    width: 70%;
+    height: 80px;
+    display: block;
+    position: relative;
+    padding: 20px;
+}
+.information p {
+    line-height: 20px;
+}
+.information p:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+.information p:nth-child(2) {
+    font-size: 10px;
+}
+.el-divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.more {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+}
+.progress {
+    width: 100%;
+    height: 120px;
+    display: block;
+    position: relative;
+}
+.demo-progress .el-progress--line {
+    width: 100%;
+}
+.top-item {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.item-icon {
+    width: 92px;
+    height: 92px;
+    display: block;
+    position: relative;
+}
+.item-2 {
+    width: 70%;
+    padding: 20px;
+    height: 92px;
+    display: block;
+    position: relative;
+}
