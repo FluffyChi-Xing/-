@@ -15,21 +15,22 @@ const store = useCounterStore()
 
 <template>
   <el-menu
-      default-active="1"
+      default-active="/"
       class="el-menu-vertical-demo"
       :collapse="store.isCollapse"
       background-color="#0b0b28"
       text-color="#ffffff"
+      router
   >
-    <el-menu-item index="1">
+    <el-menu-item index="/">
       <el-icon><home-filled /></el-icon>
       <template #title>系统首页</template>
     </el-menu-item>
-    <el-menu-item index="2">
+    <el-menu-item index="/table">
       <el-icon><memo /></el-icon>
       <template #title>基础表格</template>
     </el-menu-item>
-    <el-menu-item index="3">
+    <el-menu-item index="/tab">
       <el-icon><ticket /></el-icon>
       <template #title>tab选项卡</template>
     </el-menu-item>
@@ -38,17 +39,20 @@ const store = useCounterStore()
         <el-icon><files /></el-icon>
         <span>表单相关</span>
       </template>
-      <el-menu-item-group title="Group One">
-        <el-menu-item index="1-1">item one</el-menu-item>
-        <el-menu-item index="1-2">item two</el-menu-item>
+      <el-menu-item-group>
+        <el-menu-item index="/form">基本表单</el-menu-item>
+        <el-sub-menu index="4-1">
+          <template #title>
+            <span>三级菜单</span>
+          </template>
+          <el-menu-item-group>
+            <el-menu-item-group>
+              <el-menu-item index="/text">富文本编辑器</el-menu-item>
+              <el-menu-item index="/markdown">Markdown编辑器</el-menu-item>
+            </el-menu-item-group>
+          </el-menu-item-group>
+        </el-sub-menu>
       </el-menu-item-group>
-      <el-menu-item-group title="Group Two">
-        <el-menu-item index="1-3">item three</el-menu-item>
-      </el-menu-item-group>
-      <el-sub-menu index="1-4">
-        <template #title>item four</template>
-        <el-menu-item index="1-4-1">item one</el-menu-item>
-      </el-sub-menu>
     </el-sub-menu>
     <el-menu-item index="5">
       <el-icon><box /></el-icon>

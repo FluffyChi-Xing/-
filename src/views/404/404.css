@@ -1,0 +1,17 @@
+.background {
+    width: 100vw;
+    height: 47vw;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.container {
+    width: 600px;
+    height: 600px;
+    display: block;
+    position: relative;
+    margin: auto;
+    background-image: url("@/assets/svg/404.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
