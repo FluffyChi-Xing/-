@@ -41,6 +41,7 @@ const store = useCounterStore()
       </template>
       <el-menu-item-group>
         <el-menu-item index="/form">基本表单</el-menu-item>
+        <el-menu-item index="/load">文件上传</el-menu-item>
         <el-sub-menu index="4-1">
           <template #title>
             <span>三级菜单</span>

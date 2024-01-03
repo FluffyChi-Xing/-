@@ -40,24 +40,31 @@ const handleClick = (tab, event) => {
         <el-tab-pane label="已读消息（2）" name="second">
           <div class="item">
             <div class="item_1">
-              <span style="line-height: 42px;float: left">【系统通知】 该系统将于今晚凌晨两点到五点更新维护</span>
+              <span style="line-height: 42px;float: left;text-overflow: ellipsis;overflow: hidden">【系统通知】 该系统将于今晚凌晨两点到五点更新维护</span>
               <span style="line-height: 42px;margin-left: 50%;float: left">2023-04-19&nbsp;20:00:00</span>
+              <el-button style="background: transparent;height: 30px;margin-top: 10px;margin-left: 20px">放入回收站</el-button>
             </div>
             <el-divider style="margin-top: 10px;margin-bottom: 10px"/>
             <div class="item_1">
-              <span style="line-height: 42px;float: left">【系统通知】 该系统将于今晚九点停机</span>
+              <span style="line-height: 42px;float: left;text-overflow: ellipsis;overflow: hidden">【系统通知】 该系统将于今晚九点停机</span>
               <span style="line-height: 42px;margin-left: 58.5%;float: left">2023-04-19&nbsp;21:00:00</span>
+              <el-button style="background: transparent;height: 30px;margin-top: 10px;margin-left: 20px">放入回收站</el-button>
+            </div>
+            <el-divider style="margin-top: 10px;margin-bottom: 10px"/>
+            <div class="item_1">
+              <el-button type="info" style="height: 30px;margin-top: 10px">全部放入回收站</el-button>
             </div>
           </div>
         </el-tab-pane>
         <el-tab-pane label="回收站（1）" name="third">
           <div class="item_1">
-            <span style="line-height: 42px;float: left">【系统通知】 该系统将于今晚凌晨两点到五点更新维护</span>
+            <span style="line-height: 42px;float: left;">【系统通知】 该系统将于今晚凌晨两点到五点更新维护</span>
             <span style="line-height: 42px;margin-left: 50%;float: left">2023-04-19&nbsp;20:00:00</span>
+            <el-button style="background: transparent;height: 30px;margin-top: 10px;margin-left: 20px">删除</el-button>
           </div>
           <el-divider style="margin-top: 10px;margin-bottom: 10px"/>
           <div class="item_1">
-            <el-button type="danger" style="height: 30px;margin-top: 10px">删除</el-button>
+            <el-button type="danger" style="height: 30px;margin-top: 10px">全部删除</el-button>
           </div>
         </el-tab-pane>
       </el-tabs>

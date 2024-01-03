@@ -1,6 +1,7 @@
 <script setup>
 import {Edit, Memo, Search } from "@element-plus/icons-vue";
-import { ref } from 'vue'
+import {h, ref} from 'vue'
+import {ElNotification} from "element-plus";
 
 const value = ref('')
 const options = [
@@ -61,6 +62,30 @@ const tableData = [
   },
 ]
 const username = ref('')
+//搜索函数
+const search = () => {
+  let found = false; // 记录是否找到匹配项，默认为false
+  if (username.value !== '' && value.value !== ''){
+    for (let i = 0;i < tableData.length;i ++){
+      if (username.value === tableData[i].name && value.value === tableData[i].address){
+        found = true; // 找到匹配项，将found设为true
+        ElNotification({
+          title: '通知',
+          message: h('i', { style: 'color: teal' }, '查询成功!'),
+          type: "success"
+        });
+        break; // 找到匹配项后，跳出循环
+      }
+    }
+  }
+  if (!found) { // 如果没有找到匹配项，则弹出查询失败的对话框
+    ElNotification({
+      title: '通知',
+      message: h('i', { style: 'color: teal' }, '查询失败!'),
+      type: "warning"
+    });
+  }
+}
 </script>
 
 <template>
@@ -82,7 +107,7 @@ const username = ref('')
           />
         </el-select>
         <el-input style="width: 300px;margin-right: 10px" placeholder="用户名" clearable v-model="username"/>
-        <el-button :icon="Search" type="primary">搜索</el-button>
+        <el-button :icon="Search" type="primary" @click="search">搜索</el-button>
       </div>
       <div class="item-2">
         <el-table :data="tableData" border style="width: 100%">

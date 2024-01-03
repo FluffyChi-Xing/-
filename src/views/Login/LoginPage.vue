@@ -20,8 +20,10 @@ const open = () => {
       type: 'success',
     })
     router.push('/');
+    const date = new Date()
     store.userinfo.username = user.value.username
     store.userinfo.password = user.value.password
+    localStorage.setItem('user',date)
   }else {
     ElMessage({
       message: '密码或用户名错误!',
