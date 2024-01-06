@@ -55,24 +55,18 @@ const store = useCounterStore()
         </el-sub-menu>
       </el-menu-item-group>
     </el-sub-menu>
-    <el-menu-item index="5">
+    <el-menu-item index="/icon">
       <el-icon><box /></el-icon>
       <template #title>自定义图标</template>
     </el-menu-item>
-    <el-menu-item index="6">
+    <el-menu-item index="/echarts">
       <el-icon><pie-chart /></el-icon>
       <template #title>echarts图表</template>
     </el-menu-item>
-    <el-sub-menu index="7">
-      <template #title>
-        <el-icon><rank /></el-icon>
-        <span>拖拽组件</span>
-      </template>
-      <el-menu-item-group title="Group One">
-        <el-menu-item index="1-1">item one</el-menu-item>
-        <el-menu-item index="1-2">item two</el-menu-item>
-      </el-menu-item-group>
-    </el-sub-menu>
+    <el-menu-item index="/rank">
+      <el-icon><rank /></el-icon>
+      <template #title>拖拽组件</template>
+    </el-menu-item>
     <el-menu-item index="8">
       <el-icon><guide /></el-icon>
       <template #title>国际化</template>

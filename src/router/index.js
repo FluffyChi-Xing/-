@@ -9,6 +9,9 @@ import FormBase from "@/views/Baseform/FormBase.vue";
 import TextEdit from "@/views/TextEditer/TextEdit.vue";
 import MarkDown from "@/views/Markdown/MarkDown.vue";
 import LoadPage from "@/views/Load/LoadPage.vue";
+import IconPage from "@/views/MyIcon/IconPage.vue";
+import EchartsPage from "@/views/Echarts/EchartsPage.vue";
+import RankPage from "@/views/Rank/RankPage.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +55,21 @@ const router = createRouter({
           path: '/load',
           name: 'load',
           component: LoadPage
+        },
+        {
+          path: '/icon',
+          name: 'iconpage',
+          component: IconPage
+        },
+        {
+          path: '/echarts',
+          name: 'echarts',
+          component: EchartsPage
+        },
+        {
+          path: '/rank',
+          name: 'rankpage',
+          component: RankPage
         }
       ]
     },

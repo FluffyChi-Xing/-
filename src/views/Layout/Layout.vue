@@ -15,10 +15,12 @@ const exit = () => {
 }
 
 //tag
-const dynamicTags = ref(['系统首页', '基础表格', 'Tab选项卡'])
-console.log(route.matched)
+
+const list = ref(route.matched)
+
+console.log(list)
 const handleClose = (tag) => {
-  dynamicTags.value.splice(dynamicTags.value.indexOf(tag), 1)
+  list.value.splice(list.value.indexOf(tag), 1)
 }
 const refresh = () => {
   location.reload()
@@ -61,15 +63,15 @@ border: none;background-color: transparent;color: white"/>
       <div class="layout-right">
         <div class="right-top">
           <el-tag
-              v-for="tag in dynamicTags"
+              v-for="tag in list"
               :key="tag"
               class="mx-1"
               closable
               :disable-transitions="false"
-              @close="handleClose(tag)"
+              @close="handleClose(tag.name)"
               style="height: 30px;margin-top: 10px;margin-right: 10px;float: left;margin-left: 10px"
           >
-            {{ tag }}
+            {{tag.name }}
           </el-tag>
         </div>
         <RouterView/>
